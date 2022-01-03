@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Menu-DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+    <script src='js/index.js'></script>
+</head>
+<body>
+    <!--MENU LATERAL-->
+    <div class="menulateral">
+        <form action="" id="containerbotones">
+            <button type="button" class="botonesOpciones" onclick="palabras()">Ejercicio palabras</button>
+            <button type="button" class="botonesOpciones" onclick="calculadora()">Calculadora</button>
+            <button type="button" class="botonesOpciones" onclick="imagen()" >Imagen</button>
+        </form>
+    </div>
+    <div class="contenedorEjercicios"> <!--CONTENEDOR GENERAL-->
+            <!--INICIO-->
+        <div class="inicio">
+            <h3 class="titulo">Bienvenido</h3>
+            <h5 class="parra">Por favor dar clic a algun boton de la izquierda :)</h5>
+            <h5 class="flezha"><------</h5>
+        </div>
+        <!--EJERCICIO PALABRAS-->
+        <div class="ejercicioPalabras">
+            <div class="TextoYResultado">
+                <input type="text" id="texto" placeholder="Escribir una palabra">
+                <div id="resultado" class="resultatpPalabras">
+                </div></div>
+            <div class="botonesEjercicioPalabras">
+            <button type="button" class="botonesTexto" onclick="longitud()">longitud</button>
+            <button type="button" class="botonesTexto" onclick="mayus()">mayusculas</button>
+            <button type="button" class="botonesTexto" onclick="minus()">minusculas</button></div>
+            <script src="js/ejercicioPalabras.js"></script>
+        </div>
+        <!--CALCULADORA-->
+        <div class="Calculadora">
+            <section class="formulario">
+                <div class="cuadrito">
+                    <label class="nombre">Numero 1:
+                        <input class="controls" type="number" id="num1" placeholder="Escribir un numero"></label>
+                    <label class="nombre">Numero 2:
+                        <input class="controls" type="number" id="num2" placeholder="Escribir un numero"></label>
+                    <div class="parte_final">
+                        <p class="nombre2">Resultado: <div class="resulta" id="resultadoo"></div></p>
+                        </div>
+                </div>
+            <form action="" class="botonesOperaciones">
+                <button type="button" class="botonOpera" onclick="suma()">Suma</button>
+                <button type="button" class="botonOpera" onclick="resta()">Resta</button>
+                <button type="button" class="botonOpera" onclick="multi()">Multiplicación</button>
+                <button type="button" class="botonOpera" onclick="divi()">División</button>
+            </form>
+        </section>
+        <script src="js/EjercicioCalculadora.js"></script>
+        </div>
+        <!--IMAGEN-->
+        <div class="imagenContenido">
+            </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
